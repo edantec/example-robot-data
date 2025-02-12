@@ -286,6 +286,13 @@ class ANYmalLoader(RobotLoader):
     ref_posture = "standing"
     free_flyer = True
 
+class Monoped(RobotLoader):
+    path = "monoped_description"
+    urdf_filename = "monoped.urdf"
+    urdf_subpath = "urdf"
+    srdf_filename = "monoped.srdf"
+    ref_posture = "standing"
+    free_flyer = True
 
 class ANYmalCLoader(RobotLoader):
     path = "anymal_c_simple_description"
@@ -776,6 +783,7 @@ ROBOTS = {
     "talos": TalosLoader,
     "talos_box": TalosBoxLoader,
     "talos_arm": TalosArmLoader,
+    "monoped": Monoped,
     "talos_legs": TalosLegsLoader,
     "talos_full": TalosFullLoader,
     "talos_full_box": TalosFullBoxLoader,
